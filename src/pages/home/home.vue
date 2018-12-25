@@ -8,12 +8,14 @@
 <script>
 import homeHeader from './compenents/header'
 import homeSwiper from './compenents/swiper'
+import homeIcons from './compenents/icons'
 
 export default {
   name: 'home',
   components: {
     homeHeader,
     homeSwiper,
+    homeIcons
   }
 }
 </script>

@@ -2,7 +2,9 @@
   <div class="wapper">
     <swiper :options="swiperOption">
       <!-- slides -->
-      <swiper-slide v-for="item of swiperList" :key="item.id" ><img  class="swiper-img" :src="item.imgUrl"/></swiper-slide>
+      <swiper-slide v-for="item of swiperList" :key="item.id" >
+        <img  class="swiper-img" :src="item.imgUrl"/>
+      </swiper-slide>
       <!-- Optional controls -->
       <div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
@@ -19,7 +21,7 @@ export default {
       },
       swiperList: [{id: '0001',
         imgUrl: 'http://img1.qunarzz.com/vc/a4/29/dd/4a0734b77f675da2a8ca4a9879.jpg'}, {id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/vc/d4/d0/62/a6b7c23c1b251dfc874ce66efa.jpg'}, {id: '0003',
+        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1609/16/bee89c87307a3302.jpg_750x200_2c6299b9.jpg'}, {id: '0003',
         imgUrl: 'http://img1.qunarzz.com/vc/f5/10/9c/b647d3ee724a720ce0fa6101f0.jpg'}
       ]
     }
