@@ -5,9 +5,11 @@
   </div>
   <div class="header-input">
     <span class="iconfont">&#xe632;</span>
-    输出城市\景点\游玩主题</div>
+    <input class="input" type="text" placeholder="输出城市\景点\游玩主题"></div>
+  <router-link to="/city">
   <div class="header-right">{{this.city}} <span class="iconfont">&#xe615;</span>
   </div>
+  </router-link>
 </div>
 </template>
 <script>
@@ -25,7 +27,6 @@ export default {
     line-height:.86rem
     background: $bgColor
     color: #fff
-
   .header-left
     width: .64rem
     float: left
@@ -39,9 +40,14 @@ export default {
     border-radius:.1rem
     margin: .12rem
     padding-left:.2rem
+    .input
+      color: #bbb
+      line-height :.2rem
+      margin-bottom:.15rem
   .header-right
-    width:1.24rem
+    color:#fff
+    width:1rem
     float: right
     text-align center
-    padding-right:.2rem
+    padding-right:.1rem
 </style>
