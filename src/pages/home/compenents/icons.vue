@@ -1,12 +1,12 @@
 <template>
 <div class="icons">
-  <swiper>
+  <swiper :options="swiperOption">
     <swiper-slide v-for="(page,index) of pages" :key="index">
         <div class="icon" v-for='item of page' :key='item.id'>
             <div class="icon-img">
              <img  class="icon-img-cont" :src='item.imgUrl' >
             </div>
-            <p class="icon-des">{{item.test}}</p>
+            <p class="icon-des">{{item.des}}</p>
           </div>
     </swiper-slide>
   </swiper>
@@ -15,57 +15,16 @@
 <script>
 export default {
   name: 'homeIcons',
+  props:{
+    iconsList:Array
+  },
   data () {
     return {
-      iconsList: [{
-        id : '001',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        test: '景点门票'},
-        {
-          id : '002',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-          test: '济南必游'},
-        {
-          id : '003',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png',
-          test: '自然风光'},
-        {
-          id : '004',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png',
-          test: '趵突泉'},
-        {id : '005',
-      imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-      test: '景点门票'},
-    {
-      id : '006',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-      test: '济南必游'},
-    {
-      id : '007',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png',
-      test: '自然风光'},
-    {
-      id : '008',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png',
-      test: '趵突泉'},
-        {id : '009',
-      imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-      test: '景点门票'},
-{
-  id : '010',
-    imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-  test: '济南必游'},
-{
-  id : '011',
-    imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png',
-  test: '自然风光'},
-{
-  id : '012',
-    imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png',
-  test: '趵突泉'}
-      ]
+      swiperOption: {
+        autoplay:false
+      }
     }
-},
+  },
   computed:{
     pages (){
       const pages=[]

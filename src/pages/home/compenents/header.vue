@@ -6,13 +6,16 @@
   <div class="header-input">
     <span class="iconfont">&#xe632;</span>
     输出城市\景点\游玩主题</div>
-  <div class="header-right">城市 <span class="iconfont">&#xe615;</span>
+  <div class="header-right">{{this.city}} <span class="iconfont">&#xe615;</span>
   </div>
 </div>
 </template>
 <script>
 export default {
-  name: 'homeHeader'
+  name: 'homeHeader',
+  props: {
+    city:String
+  }
 }
 </script>
 <style lang="stylus" type="text/stylus" scoped>
