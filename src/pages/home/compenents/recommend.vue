@@ -1,6 +1,6 @@
 <template>
 <div class="recommend">
-  <div class="title">猜你喜欢</div>
+  <div class="title"><span class="iconfont">&#xe639;</span>猜你喜欢</div>
   <ul>
   <li class="content border-bottom" v-for="item of recommendList" :key="item.id">
     <div class="img-img">
@@ -31,6 +31,8 @@ export default {
       font-size:.3rem
       text-indent:.2rem
       background:#eee
+     .iconfont
+       color:#ff00ff
     .content
       height:0
       width:100%
