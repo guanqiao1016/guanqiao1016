@@ -1,7 +1,6 @@
 {
   "ret":true,
   "data":{
-    "city":"济南",
     "swiperList": [{
       "id": "0001", "imgUrl": "http://img1.qunarzz.com/vc/a4/29/dd/4a0734b77f675da2a8ca4a9879.jpg"}, {
       "id": "0002", "imgUrl": "http://img1.qunarzz.com/piao/fusion/1609/16/bee89c87307a3302.jpg_750x200_2c6299b9.jpg"}, {
